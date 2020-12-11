@@ -13,7 +13,7 @@ public class NoNullArrayList<T> extends ArrayList<T>{
             throw new IllegalArgumentException("NULL");
         }
         else{
-            return this.add(element);
+            return super.add(element);
         }
     }
 
@@ -22,7 +22,7 @@ public class NoNullArrayList<T> extends ArrayList<T>{
             throw new IllegalArgumentException("NULL");
         }
         else{
-            this.add(index,element);
+            super.add(index,element);
         }
     }
 
@@ -31,7 +31,7 @@ public class NoNullArrayList<T> extends ArrayList<T>{
             throw new IllegalArgumentException("NULL");
         }
         else{
-            return this.set(index,element);
+            return super.set(index,element);
         }
     }
 
